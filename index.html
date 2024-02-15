@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        /* Cool effect styling */
+        .cool-effect {
+            display: inline-block;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cool-effect:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Interactive Page</h1>
+    </header>
+
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
+
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the first section of the page. It contains some text to make the page scrollable.</p>
+        <div class="cool-effect">Hover me for a cool effect!</div>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the second section of the page. It also contains some text to make the page scrollable.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the third section of the page. Scroll down to explore more!</p>
+    </section>
+
+    <script>
+        // JavaScript for additional interactivity
+        document.querySelector('.cool-effect').addEventListener('click', function() {
+            alert('You clicked the cool effect!');
+        });
+    </script>
+
+</body>
+</html>
